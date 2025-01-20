@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+.quicksand-body {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* -------- */
+
+/* shared things */
+:root {
+  --clr_o1: #fea301;
+  --clr_o2: #f0aa00;
+  --clr_b1: #01acfd;
+  --clr_b2: #64c8ff;
+  --clr_p1: #5d58ef;
+  --clr_p2: #8700ff;
+  --clr_w: #f7f7f7;
+  --clr_b1: #111111;
+  --clr_b2: #202020;
+  --clr_body: #666666;
+  --clr_bg: #1e1e1e;
+  --clr_cy1: #05dadf;
+  --clr_cy2: #3cd8e8;
+  --clr_gr: #95b226;
+  --s_title: 700 2.875rem/3.6rem "Quicksand", serif;
+  --card: 500 0.95rem/1.76875rem "Raleway", serif;
+}
+.btn_one {
+  background-color: var(--clr_o1);
+  color: var(--clr_w);
+  font-family: "Quicksand", serif;
+  font-size: 20px;
+  font-weight: 700;
+  /* line-height: 1.5; */
+  border: none;
+  padding: 16px 20px;
+  cursor: pointer;
+  /* width 197 height auto 50 */
+}
+.btn_two {
+  background-color: var(--clr_gr);
+  color: var(--clr_w);
+  font-family: "Raleway", serif;
+  font-size: 15.34px;
+  font-weight: 500;
+  /* line-height: 28.76px; */
+  border: none;
+  padding: 16px 20px;
+  cursor: pointer;
+  /* width 175 height 48 */
+}
