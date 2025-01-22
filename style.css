@@ -402,7 +402,7 @@ footer {
 }
 
 /* media queries */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 577px) {
     .container {
         padding: 30px 24px;
     }
