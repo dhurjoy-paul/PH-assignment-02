@@ -104,6 +104,34 @@ nav > ul > li {
 .link4 {
     color: var(--clr_p1);
 }
+.hamburger {
+    display: none;
+    /* position: absolute; */
+    /* top: 10px; */
+    /* right: 10px; */
+}
+/* -------- */
+
+/* marquee section */
+.marquee-container {
+    box-sizing: border-box;
+    width: 100%;
+    background: #ffffff;
+    border: 2px solid #01acfd;
+    border-left: 5px solid #fea301;
+    border-right: 5px solid #fea301;
+    border-radius: 10px;
+    padding: 5px 20px;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); */
+    /* overflow: hidden; */
+    /* position: relative; */
+}
+.marquee-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #01acfd;
+    letter-spacing: 2px;
+}
 /* -------- */
 
 /* hero section */
@@ -127,6 +155,7 @@ nav > ul > li {
     margin-bottom: 24px;
 }
 .btn_hero {
+    display: block;
     background-color: var(--clr_b1);
     transition: background-color 0.3s ease;
 }
@@ -370,4 +399,127 @@ footer {
     width: 40px;
     height: auto;
     margin-right: 15px;
+}
+
+/* media queries */
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 30px 24px;
+    }
+
+    /* nav and hero */
+    nav {
+        padding: 0 20px 18px 20px;
+        border-bottom: 2px solid rgb(254, 163, 1);
+    }
+    .d_none {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .flex_c {
+        flex-direction: column-reverse;
+    }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero_title {
+        font-size: 2.5rem;
+        line-height: 1.3;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .hero_text {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.4;
+        margin-top: 10px;
+        text-align: center;
+    }
+    /* -------- */
+
+    /* curriculum */
+    .curri_cards {
+        grid-template-columns: 1fr;
+        margin-top: 55px;
+        padding-bottom: 0;
+    }
+    .s_title {
+        font-size: 1.8rem;
+        line-height: 0;
+    }
+    .c_title {
+        font-size: 1.1rem;
+        line-height: 0;
+        margin-top: 20px;
+    }
+    .c_text {
+        font-size: 0.8rem;
+        line-height: 1.8;
+        padding-bottom: 30px;
+    }
+    .read_more {
+        font-size: 0.8rem;
+        /* margin-top: 0px; */
+    }
+    .arrow {
+        /* padding-bottom: -60px; */
+    }
+    /* -------- */
+
+    /* stories section */
+    .story_cards {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 60px;
+        padding-bottom: 20px;
+    }
+    .btn_two {
+        font-size: 10px;
+    }
+    .h5 {
+        font-size: 10px;
+        line-height: 1.8;
+        margin-left: 22px;
+        padding-bottom: 20px;
+    }
+    .btn_story {
+        margin-bottom: 20px;
+    }
+    .btn_one {
+        font-size: 1rem;
+    }
+    /* -------- */
+
+    /* footer section */
+    .footer {
+        grid-template-columns: 1fr;
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .footer_title {
+        font-size: 2.23rem;
+        line-height: 1;
+    }
+    .footer_text {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-top: 25px;
+        /* padding-bottom: 10px; */
+    }
+    .menu_title {
+        font-size: 1.3rem;
+        /* line-height: 1.2; */
+        /* margin-bottom: 15px; */
+    }
+    .menu_links {
+        margin-bottom: 20px;
+    }
+    .menu_links > li > a {
+        font-size: 1rem;
+    }
 }
